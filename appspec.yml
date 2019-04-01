@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
-files:
-  - source: /target/demo-0.0.1-SNAPSHOT.jar
-    destination: /webapps/hw
+#files:
+#  - source: /target/demo-0.0.1-SNAPSHOT.jar
+#    destination: /webapps/hw
+hooks:
+  BeforeInstall:
+    - location: install.sh
